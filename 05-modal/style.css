@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Akshar&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(9, 209, 9);
+}
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.modal-container button {
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  border: 0px;
+  font-family: 'Akshar', sans-serif;
+  font-size: medium;
+  font-weight: 700;
+}
+
+.modal-content {
+  justify-content: center;
+  visibility: hidden;
+}
