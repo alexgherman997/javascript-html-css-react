@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  color: #333;
+  position: relative;
+  display: flex;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin: 10rem 10rem;
+  width: 100rem;
+  height: 60rem;
+}
+
+.player {
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 2rem;
+  padding: 2rem 7rem;
+  width: 70%;
+  height: 65vh;
+  text-align: center;
+  /* align-items: center; */
+  /* flex: 50%; */
+  /* padding: 9rem; */
+  border-radius: 10px;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.player--winner {
+  background-color: rgba(254, 250, 0, 0.892);
+}
+
+.name {
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 2rem;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.score {
+  font-size: 5rem;
+  color: rgba(200, 8, 56, 0.6);
+}
+
+.current {
+  background: rgba(197, 9, 90, 0.764);
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 8rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.current-label {
+  font-size: 1.3rem;
+  margin: 0.5rem;
+}
+
+.current-score {
+  font-size: 2.5rem;
+}
+
+img {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  margin-top: 7rem;
+}
+
+.btn {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 30rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.newGame {
+  margin-top: 1rem;
+  position: absolute;
+}
+
+.rollDice {
+  position: absolute;
+  margin-top: 21rem;
+}
+
+.holdScore {
+  position: absolute;
+  margin-top: 25rem;
+}
+
+.hidden {
+  display: none;
+}
