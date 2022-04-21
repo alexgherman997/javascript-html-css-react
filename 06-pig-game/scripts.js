@@ -21,20 +21,18 @@ let scorePlayer1, scorePlayer2, currentScore, diceNumber;
 const initGame = function () {
   scorePlayer1 = 0;
   scorePlayer2 = 0;
-
   currentScore = 0;
-  diceNumber = 1;
 
-  classPlayer1.classList.remove('player--active');
+  activePlayer = 0;
+  playing = true;
+
+  classPlayer1.classList.add('player--active');
   classPlayer2.classList.remove('player--active');
   classPlayer1.classList.remove('player--winner');
   classPlayer2.classList.remove('player--winner');
 
-  classPlayer1.classList.add('player--active');
-
   scoreClassPlayer1.textContent = 0;
   currentScoreClassPlayer1.textContent = 0;
-
   scoreClassPlayer2.textContent = 0;
   currentScoreClassPlayer2.textContent = 0;
 
@@ -106,3 +104,7 @@ btnNewGame.addEventListener('click', initGame);
 initGame();
 
 //YOU CAN DO SOME REFACTORING, USING SWITCH PLAYER & ACTIVE PLAYER
+///IMPLEMENT NEW VERSION USING SWITCH PLAYER (take it from context and setstate, classList.toggle)
+//using variable playing to stop the game
+
+//THIS IS OLD VERSION OF THE APP, NOT WORKING AS EXPECTED AFTER SOME CHANGES , NEW VERSION IS in script-new.js
