@@ -56,3 +56,6 @@ window.addEventListener('keydown', e => {
   if (e.key == 'Escape' && !modalPopup.classList.contains('hidden'))
     closeModal();
 });
+
+
+
