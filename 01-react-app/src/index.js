@@ -8,8 +8,9 @@ import {
 
 import Square from './tic-tac-toe/Square';
 import Board from './tic-tac-toe/Board';
+import Game from './tic-tac-toe/Game';
 
 console.log(document.getElementById('root'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Board />);
+root.render(<Game />);

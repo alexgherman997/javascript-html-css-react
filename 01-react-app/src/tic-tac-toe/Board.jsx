@@ -2,14 +2,31 @@ import React from 'react';
 import Square from './Square';
 
 class Board extends React.Component {
+  // TODO add array of 9 nulls for constructor for state and to find
+  //the winner
+  constructor(props) {
+    super(props);
+    this.state = { playerState: 'X' };
+  }
+
+  handleCallback = () => {
+    this.setState({ playerState: this.state.playerState == 'X' ? 'O' : 'X' });
+  };
+
   renderSquare(i) {
-    return <Square />;
+    return (
+      <Square
+        value={i}
+        playerState={this.state.playerState}
+        parentCallback={this.handleCallback}
+      />
+    );
   }
 
   render() {
-    const status = 'Next player: X';
+    const status = `Next player: ${this.state.playerState}`;
     return (
-      <div class="board">
+      <div className="board">
         <div className="status">{status}</div>
         <div className="board-row">
           {this.renderSquare(0)}

@@ -9,11 +9,16 @@ body {
   margin: 20px;
 }
 
+.status {
+  margin-bottom: 10px;
+}
+
 .square {
   background-color: white;
   width: 30px;
   height: 30px;
   border-width: 1px;
+  border-style: solid;
 }
 
 .board-row {
