@@ -9,10 +9,6 @@ body {
   margin: 20px;
 }
 
-.status {
-  margin-bottom: 10px;
-}
-
 .square {
   background-color: white;
   width: 30px;
@@ -24,4 +20,24 @@ body {
 .board-row {
   display: flex;
   font-size: 0;
+}
+
+.game {
+  display: flex;
+  align-items: right;
+}
+
+.status {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.game-info ol {
+  margin-left: 30px;
+}
+.btn {
+  padding: 3px;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: #f2f2f2;
 }
