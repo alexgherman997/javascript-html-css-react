@@ -245,3 +245,5 @@ const vacation = {
 };
 
 console.log(vacation?.city ?? 'Unknown city');
+
+
